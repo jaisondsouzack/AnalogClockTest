@@ -1,0 +1,68 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Analog Clock Widget Flat Responsive Widget Template :: w3layouts</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Analog Clock Widget template Responsive, Login form web template,Flat Pricing tables,Flat Drop downs  Sign up Web Templates, Flat Web Templates, Login sign up Responsive web template, SmartPhone Compatible web template, free web designs for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- Custom Theme files -->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- //Custom Theme files -->
+<!-- web font -->
+<link href='//fonts.googleapis.com/css?family=Source+Code+Pro:400,200,300,500,600,700,900' rel='stylesheet' type='text/css'>
+<!-- //web font -->
+</head>
+<body>
+	<!-- main -->
+	<div class="main">
+		<h1>Analog Clock Widget</h1>
+		<div class="main-agileits-row">
+			<div class="w3ls-wrapper">
+				<div class="clock" id="clock"></div>
+				<div class="clock wthree-clock-mdl" id="clock1"></div>
+				<div class="clock" id="clock2"></div>
+				<div class="clear"> </div>
+			</div> 
+		</div>	
+	</div>	
+	<!-- //main -->
+	<!-- copyright -->
+	<div class="copyright">
+		<h1><p> Analog Clock </p></h1>
+	</div>
+	<!-- //copyright -->
+	<!-- clock js -->
+	<script src="js/jquery-3.0.0.min.js"></script>
+	<script type="text/javascript" src="js/clock-1.1.0.js"></script>
+	<script> 
+		var clock = $("#clock").clock(),
+			data = clock.data('clock');
+
+		// data.pause();
+		// data.start();
+		// data.setTime(new Date());
+
+		var d = new Date();
+		d.setHours(9);
+		d.setMinutes(51);
+		d.setSeconds(20);
+
+		var clock1 = $("#clock1").clock({
+			theme: 't2',
+			date: d
+		});
+
+		var clock2 = $("#clock2").clock({
+			theme: 't3'
+		}); 
+	</script>
+	<!-- //clock js -->
+</body>
+</html>
